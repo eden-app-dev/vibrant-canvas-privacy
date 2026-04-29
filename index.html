@@ -169,13 +169,36 @@ third-party services, which are necessary for the app to function:</p>
 </table>
 
 <h2>4. Data Retention</h2>
+
+<h3>Firebase Analytics events (GA4)</h3>
+<p>Gameplay events — such as which levels you play, how long you play them, ratings
+you give, time spent on the level selection screen, and font settings — are sent
+to Firebase Analytics as anonymous events. We retain these events for
+<strong>14 months</strong>, after which Google deletes them automatically from their
+servers. We do not retain independent copies of this data.</p>
+
+<h3>Firebase Firestore user documents</h3>
+<p>A summary of your gameplay progress (levels completed, best times, ratings per
+level, session history, and streak data) is stored in a Firestore database under
+your anonymous user ID. This data is retained <strong>indefinitely</strong> — it
+does not expire automatically. It is deleted only when:</p>
 <ul>
-  <li><strong>Firebase analytics</strong> events are retained for 14 months by default, after which
-  Google deletes them automatically. We do not retain copies independently.</li>
-  <li><strong>AdMob data</strong> is retained according to Google's advertising data policies.</li>
-  <li><strong>Local save data</strong> (your level progress, gallery, streak) is stored only on
-  your device and is deleted when you uninstall the app.</li>
+  <li>You request deletion by emailing edenapp.contacto@gmail.com (we will process the
+  request within 30 days); or</li>
+  <li>We discontinue the app and delete the database.</li>
 </ul>
+<p>This data is linked only to your anonymous ID and cannot be used to identify you.</p>
+
+<h3>Advertising data (AdMob)</h3>
+<p>Google AdMob retains advertising signals, including your Advertising ID and ad
+interaction data, for approximately <strong>9 months</strong> for measurement and
+fraud prevention purposes, after which it is aggregated or deleted. This is
+controlled by Google and is subject to their data retention policies.</p>
+
+<h3>Local device data</h3>
+<p>Your level progress, gallery of completed paintings, streak counter, and settings
+are stored locally on your device only. This data is deleted automatically when
+you uninstall the app. It is not backed up to any server.</p>
 
 <h2>5. Security</h2>
 <p>All data transmitted to Firebase and AdMob is encrypted in transit using HTTPS/TLS.
@@ -233,7 +256,7 @@ grants you additional rights:</p>
   your access to the app.</li>
 </ul>
 
-<p>To exercise your rights, email <strong>santilland333@gmail.com</strong> with subject
+<p>To exercise your rights, email <strong>edenapp.contacto@gmail.com</strong> with subject
 "CCPA Request".</p>
 
 <h2>9. Children's Privacy</h2>
@@ -251,7 +274,7 @@ the revised policy.</p>
 
 <h2>11. Contact</h2>
 <p>Privacy questions or requests:<br>
-<strong>Email:</strong> santilland333@gmail.com<br>
+<strong>Email:</strong> edenapp.contacto@gmail.com<br>
 <strong>Response time:</strong> Within 30 days</p>
 
 <br><hr><br>
@@ -407,7 +430,7 @@ automatically refunded upon termination for cause.</p>
 <p>These Terms are governed by and construed in accordance with the laws of
 Argentina, without regard to conflict of law principles.</p>
 <p>Any disputes arising from these Terms or your use of the app shall first be
-addressed through good-faith negotiation by emailing santilland333@gmail.com.
+addressed through good-faith negotiation by emailing edenapp.contacto@gmail.com.
 If a dispute cannot be resolved informally within 30 days, it shall be submitted
 to the competent courts of Argentina.</p>
 <p>If you are a consumer in the European Union, you may also use the
@@ -435,3 +458,4 @@ effect constitutes acceptance of the revised Terms.</p>
 
 </body>
 </html>
+
